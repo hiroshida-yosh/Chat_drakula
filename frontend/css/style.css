@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+body {
+    background-color: #282A36;
+}
+
+
+.container {
+    width: 97%;
+    height: 100vh;
+    margin: auto;
+    max-width: 500px;
+    background-color: #282A36;
+    padding-top: 15px;
+}
+
+.logo_Drakula {
+    color: #FF79C6;
+    padding: 10px 0;
+}
+
+.login {
+    background-color: #44475A;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 65px;
+}
+
+.login h2 {
+    color: #BD93F9;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.login_input {
+    background-color: #282A36;
+    border-style: none;
+    width: 100%;
+    height: 30px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    color: #BD93F9;
+}
+
+.login_input::placeholder {
+    color: #bd93f93d;
+}
+
+.login_button {
+    display: block;
+    margin: auto;
+    width: 30%;
+    height: 35px;
+    color: #BD93F9;
+    font-weight: bolder;
+    background-color: #282A36;
+    font-size: 1.1em;
+}
+
+.chat_messages {
+    display: none;
+    padding-bottom: 70px;
+}
+
+.chat {
+    position: fixed;
+    bottom: 0vh;
+    width: 100%;
+    max-width: 500px;
+    display: none;
+    background-color: #282A36;
+}
+
+.chat_form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.chat_input {
+    display: block;
+    width: 90%;
+    height: 40px;
+    border-radius: 20px;
+    border-style: none;
+    padding-left: 15px;
+    background-color: #F8F8F2;
+    color: #44475A;
+}
+
+.chat_button {
+    display: block;
+    max-height: 40px;
+    font-size: 20px;
+    width: 9%;
+    font-weight: bolder;
+    border-radius: 25%;
+    border-style: none;
+    background-color: #44475A;
+    color: #FF79C6;
+    transition: 0.3s;
+}
+
+.chat_button:hover {
+    background-color: #414d70;
+    color: #BD93F9;
+}
+
+.message_self {
+    background-color: #F8F8F2;
+    color: #44475A;
+    width: 55%;
+    border-radius: 3px 10px 3px 10px;
+    padding: 3px 15px;
+    margin: 5px;
+    word-break: break-word;
+}
+
+.message_other {
+    background-color: #44475A;
+    color: #FF79C6;
+    max-width: 55%;
+    border-radius: 10px 3px 10px 3px;
+    padding: 3px 15px;
+    margin: 10px;
+    margin-left: auto;
+    text-align: start;
+    word-break: break-word;
+}
+
+.message_sender {
+    display: block;
+    font-weight: bolder;
+    padding-bottom: 3px;
+    font-size: 12px;
+}
