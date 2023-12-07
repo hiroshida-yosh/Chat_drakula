@@ -74,7 +74,7 @@ const handleLogin = (e) => {
     chat.style.display = "flex"
     chat_messages.style.display = "block"
 
-    websocket = new WebSocket("ws://localhost:8080")
+    websocket = new WebSocket("wss://chat-drakula.onrender.com")
     websocket.onmessage = processMessage
 }
 
